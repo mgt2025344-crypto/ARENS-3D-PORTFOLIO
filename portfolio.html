@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | ARENS 3D</title>
+  <meta name="description" content="Explore 3D characters, product models, environments and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo" aria-label="ARENS 3D home">ARENS<span>3D</span></a>
+      <!-- Main navigation -->
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="portfolio.html" class="active" aria-current="page">Portfolio</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark mode">&#9680;</button>
+        <a class="btn btn-primary nav-cta" href="contact.html">Contact Me</a>
+        <button id="menu-toggle" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow">PORTFOLIO</p>
+        <h1>My Creative Works</h1>
+        <p>Explore a collection of 3D characters, product models, environments, and creative visual experiments.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Category filters -->
+        <div class="filters" role="group" aria-label="Filter projects by category">
+        <button type="button" class="filter-btn active" data-category="All Projects" aria-pressed="true">All Projects</button>
+        <button type="button" class="filter-btn" data-category="Character Design" aria-pressed="false">Character Design</button>
+        <button type="button" class="filter-btn" data-category="Product Modeling" aria-pressed="false">Product Modeling</button>
+        <button type="button" class="filter-btn" data-category="Architecture" aria-pressed="false">Architecture</button>
+        <button type="button" class="filter-btn" data-category="Environment Design" aria-pressed="false">Environment Design</button>
+        <button type="button" class="filter-btn" data-category="Vehicle Modeling" aria-pressed="false">Vehicle Modeling</button>
+        </div>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+        <!-- Gallery -->
+        <div id="gallery" class="project-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-box">
+      <button id="modal-close" class="modal-close" type="button" aria-label="Close project details">&times;</button>
+      <img id="modal-image" src="" alt="">
+      <div class="modal-info">
+        <p id="modal-category" class="eyebrow"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <p><strong>Software used:</strong> <span id="modal-tools"></span></p>
+        <p><strong>Year:</strong> <span id="modal-year"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo" aria-label="ARENS 3D home">ARENS<span>3D</span></a>
+        <p class="footer-text">Aren Silva is a fictional 3D artist creating models, characters and digital worlds.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Follow Me</h3>
+        <div class="socials">
+          <a href="https://www.behance.net/" target="_blank" rel="noopener" aria-label="Behance (sample link)">Be</a>
+          <a href="https://www.artstation.com/" target="_blank" rel="noopener" aria-label="ArtStation (sample link)">Ar</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (sample link)">Ig</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn (sample link)">In</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright container">&copy; <span id="year">2026</span> ARENS 3D. All rights reserved. Student project with fictional content.</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>

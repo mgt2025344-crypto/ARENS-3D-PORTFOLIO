@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARENS 3D | 3D Artist & Model Designer</title>
+  <meta name="description" content="Portfolio of Aren Silva, a fictional 3D artist and model designer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo" aria-label="ARENS 3D home">ARENS<span>3D</span></a>
+      <!-- Main navigation -->
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark mode">&#9680;</button>
+        <a class="btn btn-primary nav-cta" href="contact.html">Contact Me</a>
+        <button id="menu-toggle" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-intro">HELLO, I'M</p>
+          <h1>Aren <span class="accent">Silva</span></h1>
+          <p class="hero-role">3D Artist &amp; Model Designer</p>
+          <p class="hero-desc">I transform creative ideas into detailed 3D models, characters, and realistic digital experiences.</p>
+          <div class="hero-buttons">
+            <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+            <a href="contact.html" class="btn btn-outline">Hire Me</a>
+          </div>
+          <div class="socials hero-socials">
+          <a href="https://www.behance.net/" target="_blank" rel="noopener" aria-label="Behance (sample link)">Be</a>
+          <a href="https://www.artstation.com/" target="_blank" rel="noopener" aria-label="ArtStation (sample link)">Ar</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (sample link)">Ig</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn (sample link)">In</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="red-shape" aria-hidden="true"></div>
+          <div class="dots" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="hero-portrait.png" alt="Portrait of Aren Silva, 3D artist" width="900" height="1116">
+          </div>
+          <p class="float-tag">Creative 3D Artist</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="section reveal" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-shape" aria-hidden="true"></div>
+          <img src="about-workspace.jpg" alt="Aren working on a 3D character in his studio" width="1200" height="896">
+          <p class="about-label">Studio Workspace</p>
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>I'm Aren Silva</h2>
+          <p class="subtitle">3D Artist &amp; Model Designer</p>
+          <p>I am a passionate 3D artist who loves turning ideas into detailed models. I work with studios, brands and game teams to create characters, products and worlds that feel real.</p>
+          <p>My process is simple: I start with sketches and references, build the model, add textures and light, then polish every detail before delivery.</p>
+          <!-- Number counters -->
+          <div class="stats">
+            <div class="stat"><strong><span class="count" data-target="3">3</span>+</strong><span>Years Experience</span></div>
+            <div class="stat"><strong><span class="count" data-target="50">50</span>+</strong><span>Projects Completed</span></div>
+            <div class="stat"><strong><span class="count" data-target="30">30</span>+</strong><span>Happy Clients</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="section section-alt reveal" id="skills">
+      <div class="container">
+        <p class="eyebrow">MY SKILLS</p>
+        <h2>3D Tools I Use Every Day</h2>
+        <p class="section-intro">Sample skill levels for this student project.</p>
+        <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Blender</h3>
+          <p class="skill-type">3D Modeling</p>
+          <p>Building clean, detailed models from simple shapes.</p>
+          <div class="skill-row"><span>Skill level</span><strong>95%</strong></div>
+          <div class="bar" role="img" aria-label="Blender skill level 95 percent"><div class="bar-fill" style="--level:95%"></div></div>
+        </article>
+        <article class="skill-card">
+          <h3>Autodesk Maya</h3>
+          <p class="skill-type">3D Animation</p>
+          <p>Rigging and animating characters with life.</p>
+          <div class="skill-row"><span>Skill level</span><strong>85%</strong></div>
+          <div class="bar" role="img" aria-label="Autodesk Maya skill level 85 percent"><div class="bar-fill" style="--level:85%"></div></div>
+        </article>
+        <article class="skill-card">
+          <h3>ZBrush</h3>
+          <p class="skill-type">Digital Sculpting</p>
+          <p>Sculpting fine details like skin and armor.</p>
+          <div class="skill-row"><span>Skill level</span><strong>90%</strong></div>
+          <div class="bar" role="img" aria-label="ZBrush skill level 90 percent"><div class="bar-fill" style="--level:90%"></div></div>
+        </article>
+        <article class="skill-card">
+          <h3>Substance 3D Painter</h3>
+          <p class="skill-type">Texturing</p>
+          <p>Painting realistic materials and surfaces.</p>
+          <div class="skill-row"><span>Skill level</span><strong>88%</strong></div>
+          <div class="bar" role="img" aria-label="Substance 3D Painter skill level 88 percent"><div class="bar-fill" style="--level:88%"></div></div>
+        </article>
+        <article class="skill-card">
+          <h3>Cinema 4D</h3>
+          <p class="skill-type">Motion Design</p>
+          <p>Creating smooth motion graphics and loops.</p>
+          <div class="skill-row"><span>Skill level</span><strong>80%</strong></div>
+          <div class="bar" role="img" aria-label="Cinema 4D skill level 80 percent"><div class="bar-fill" style="--level:80%"></div></div>
+        </article>
+        <article class="skill-card">
+          <h3>Unreal Engine</h3>
+          <p class="skill-type">Real-time Rendering</p>
+          <p>Lighting and showing scenes in real time.</p>
+          <div class="skill-row"><span>Skill level</span><strong>78%</strong></div>
+          <div class="bar" role="img" aria-label="Unreal Engine skill level 78 percent"><div class="bar-fill" style="--level:78%"></div></div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="section reveal" id="services">
+      <div class="container">
+        <p class="eyebrow">SERVICES</p>
+        <h2>What I Can Do For You</h2>
+        <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#9672;</div>
+          <h3>3D Modeling</h3>
+          <p>Clean, detailed models ready for games, film and print.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#9786;</div>
+          <h3>Character Design</h3>
+          <p>Original characters from first sketch to final render.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#9635;</div>
+          <h3>Product Visualization</h3>
+          <p>Realistic product images for ads and online stores.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">&#9650;</div>
+          <h3>3D Environment Design</h3>
+          <p>Atmospheric worlds, cities and scenes with depth.</p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="section section-alt reveal" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">MY PORTFOLIO</p>
+            <h2>Featured Projects</h2>
+          </div>
+          <a href="portfolio.html" class="btn btn-outline">View All Projects</a>
+        </div>
+        <div id="featured-projects" class="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="container reveal">
+      <div class="cta">
+        <span class="cta-shape cta-shape-1" aria-hidden="true"></span>
+        <span class="cta-shape cta-shape-2" aria-hidden="true"></span>
+        <div class="cta-content">
+          <p class="cta-small">LET'S CREATE SOMETHING AMAZING</p>
+          <h2>Got a 3D Project in Mind?</h2>
+          <a href="contact.html" class="btn btn-primary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo" aria-label="ARENS 3D home">ARENS<span>3D</span></a>
+        <p class="footer-text">Aren Silva is a fictional 3D artist creating models, characters and digital worlds.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Follow Me</h3>
+        <div class="socials">
+          <a href="https://www.behance.net/" target="_blank" rel="noopener" aria-label="Behance (sample link)">Be</a>
+          <a href="https://www.artstation.com/" target="_blank" rel="noopener" aria-label="ArtStation (sample link)">Ar</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (sample link)">Ig</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn (sample link)">In</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright container">&copy; <span id="year">2026</span> ARENS 3D. All rights reserved. Student project with fictional content.</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>
